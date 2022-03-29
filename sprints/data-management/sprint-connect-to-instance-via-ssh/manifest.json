@@ -3,7 +3,7 @@
     "help": "livelabs-help-db_us@oracle.com",
     "tutorials": [
         {
-            "title": "How do I connect to the instance via SSH?",
+            "title": "How do I connect to a compute instance via SSH?",
             "description": "",
             "filename": "instance-ssh.md"
         },

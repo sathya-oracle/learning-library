@@ -36,7 +36,11 @@ Before getting started, you should submit your LiveLabs workshop request to the 
 
   ![Select tags](images/tags.png " ")
 
-6.  We recommend you don't start working on your workshop until your workshop has been approved by a council member.
+6. Click the *Social* tab to include a link to the blog of your workshop, write a couple sentences that would accompany a LinkedIn post about your workshop, and write a tweet to be used to promote your workshop.
+
+  ![Select social](images/social.png " ")
+
+7.  We recommend you don't start working on your workshop until your workshop has been approved by a council member.
 
 Once your workshop is submitted, it will be sent to the workshop council.  The workshop council will approve your workshop or ask for more details within 2 business days. If you have not heard back from your council group after 2 business days, please message them via WMS. Once approved, you will be entered into the workflow and given additional steps to progress through to production.
 
@@ -162,8 +166,6 @@ To clone the forked repository:
   ![](./images/git-hub-my-cloned-repository.png " ")
 
   > **Note:** The local cloned repository is connected to the remote fork version. You can push your local clone changes to the remote fork version when you are online to keep them in sync.
-
-  **Important Note**: The **create-labs** folder (shown in the above screen) and its contents are internal to this "**Creating Labs and Workshops**" workshop. This folder is not available at the production. This means that when you fork the **oracle\learning-library** repository to your fork, such as **your account\learning-library**, you will not find the **create-labs** folder, and thereby it will not be available in your cloned repository as well.
 
   When you make a clone, you can create your own project folder, edit the files in your preferred editor, such as **Atom**, and use **GitHub Desktop client** to keep track of your changes without having to be online.
 

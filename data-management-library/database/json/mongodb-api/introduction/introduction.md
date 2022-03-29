@@ -2,7 +2,13 @@
 
 ## About this Workshop
 
-In this workshop, you will create an Autonomous JSON Database, and connect to it using MongoDB tools. You'll learn how you can work with JSON data using both standard MongoDB tools, and using Oracle Database tools.
+MongoDB is a popular, single-purpose database used for storing JSON documents.
+
+In this workshop, we'll show you how you can replace your MongoDB database with a powerful, multi-model Oracle Database but still run standard MongoDB tools and programs against that database, with little or no coding changes required.
+
+Once you're using Oracle Database to store your document collections, you have access to that very same data from all the advanced tools provided by Oracle, such as machine learning, graph analytics and many others. Your data can remain in document collections, but be accessed from the SQL language as well as using MongoDB commands. You can join JSON and relational data, without any need to export the JSON data to relational format first.
+
+In the workshop, you will create an Autonomous JSON Database, and connect to it using MongoDB tools. You'll learn how you can work with JSON data using both standard MongoDB tools, and using Oracle Database tools.
 
 This lab is organized into different topics, each topic consists of multiple steps. Some steps are a bit more advanced, they're marked as 'advanced' and you can skip them. After completing this workshop a user has a very good understanding what JSON features are available in Oracle Database and when to use them. A user will also have learned why Oracle database is better suited for JSON Development than MongoDB, etc.
 

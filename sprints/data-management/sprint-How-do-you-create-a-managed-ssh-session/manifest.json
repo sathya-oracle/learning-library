@@ -3,7 +3,7 @@
     "help": "livelabs-help-db_us@oracle.com",
     "tutorials": [
         {
-            "title": "How do I create a managed SSH session?",
+            "title": "How do I create a managed SSH session using Bastion?",
             "description": "",
             "filename": "connect-to-db-bastion.md"
         },

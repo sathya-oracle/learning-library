@@ -3,7 +3,7 @@
     "help": "livelabs-help-db_us@oracle.com",
     "tutorials": [
         {
-            "title": "How do I connect to different Oracle Databases that are installed in a same Linux server?",
+            "title": "How do I connect to a PDB from a CDB?",
             "description": "",
             "filename": "linux-server.md"
         },

@@ -96,7 +96,7 @@ Cloud Shell is a Linux command prompt provided for your user. You can upload fil
 	* Is your password correct, with any special characters quoted as above?
 	* Did you leave any [ square brackets ] in the URL where they should have been removed?
 	* Do you have the : sign between the user and password, and the @ sign after the password? 
-	* Is the whole commamd on a single line with no line breaks?
+	* Is the whole command on a single line with no line breaks?
 
 ## Task 5: Create, populate and search a collection
 
@@ -156,6 +156,9 @@ You should now be in Mongo Shell. This is a command-line utility to interact wit
 
 	will return all documents which have a name field of "Miller". Try it now.
 
+	Note: MongoDB Shell allows a "relaxed" JSON syntax where the key name strings don't need to be quoted. So you could use **{name:"Miller"}** 
+	instead of **{"name":"Miller"}**. We will use that syntax in some of the following examples.
+
 	A more advanced QBE will use special match operators. For example, **$gt** means "greater than". So:
 
 	```
@@ -168,7 +171,44 @@ You should now be in Mongo Shell. This is a command-line utility to interact wit
 
     ![QBE to find salary greater than 50000](./images/find-salary.png)
 
-You may now **proceed to the next lab**.
+4.	Projection
+
+	In the QBEs used so far, the database has returned the entire document involved. Not a problem here where the documents are short, but we may only want specific parts of the documents. Doing that is called "projection" and is similar to a SELECT clause in a SQL statement. Let's say we want just the name and salary info for our programmers. To get that we specify a second argument to the **find** command, which is a JSON document specifying the parts of the document to return:
+
+	```
+	<copy>
+	db.emp.find({ job:"Programmer" }, { name:1, salary:1 })
+	<copy>
+	```
+
+	![](./images/projection.png " ")
+
+5.	Updates
+
+	We can use the updateOne or updateMany commands to make changes to one, or a number, of documents. They both take a first argument which is a QBE specifying which documents to update, and a second argument which is the changes to be made to the document. For example the following will add an email address to our "Miller" employer.
+
+	```
+	<copy>
+	db.emp.updateOne({name:"Miller"}, {$set: {email:"miller@example.com"}})
+	<copy>
+	```
+	
+	When you've run that, you should see confirmation that one record has been found, and one modified. You can check the modification has worked with:
+
+	```
+	<copy>
+	db.emp.find({name:"Miller"})
+	<copy>
+	```
+	
+	![](./images/qbe-update.png " ")
+
+That's all we're going to cover in MongoDB Shell, but there are some important points to remember:
+
+* This will work just as well with GUI tools such as Atlas, or from your own programs using MongoDB libraries
+* All the data is held in Oracle Autonomous Database, and can be accessed from any SQL-based programs just as easily as from MongoDB programs.
+
+In the next lab we'll cover Autonomous Database tools, including JSON Workshop and SQL.
 
 ## Acknowledgements
 

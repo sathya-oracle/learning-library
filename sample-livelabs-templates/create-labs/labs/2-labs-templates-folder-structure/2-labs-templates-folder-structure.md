@@ -30,7 +30,7 @@ The following image shows a folder structure of the **sample-workshop** that is 
     * a `manifest.json` file defines the structure of the workshop that the `index.html` file renders. You can copy this file from the *sample-workshop* folder, but you need to customize it for your workshop.
     * a `README.md` file (optional), which contains the summary of the entire workshop. You can view it from your git repository.
 
-    The following screenshot shows a sample `manifest.json` file that is opened in the **Visual Studio Code** Editor.
+    The following screenshot shows a sample `manifest.json` file that is opened in the **Visual Studio Code** Editor. Ensure that the appropriate stakeholder email is listed by "help".
     ![](./images/manifest.png " ")
 
 This concludes this lab. You may now **proceed to the next lab**.

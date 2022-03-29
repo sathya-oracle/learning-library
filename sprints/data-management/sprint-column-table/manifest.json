@@ -3,7 +3,7 @@
     "help": "livelabs-help-db_us@oracle.com",
     "tutorials": [
         {
-            "title": "How can I get column names from a table in Oracle?",
+            "title": "How can I get all column names from a table?",
             "description": "",
             "filename": "column-table.md"
         },
