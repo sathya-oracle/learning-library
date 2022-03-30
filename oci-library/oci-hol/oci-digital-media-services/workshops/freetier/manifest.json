@@ -1,15 +1,13 @@
 {
-    "workshoptitle": "The Title of the Workshop is Defined in the Manifest File",
-    "include": {"starter-file.sql":"../../files/starter-file.sql",
-                "sample.json":"../../files/sample.json",
-                "injected-step.md":"../../files/injected-step.md"},
+    "workshoptitle": "Transcode and Stream your video using OCI Digital Media Services",
+    "include": {},
       "help": "livelabs-help-db_us@oracle.com",
       "tutorials": [
         {
-            "title": "LiveLabs Complete Template",
-            "description": "This is the complete template for LiveLabs content developers",
+            "title": "Transcode and Stream your video using OCI Digital Media Services",
+            "description": "Digital Media Services",
             "type": "livelabs",
-            "filename": "../../livelabs-template.md"
+            "filename": "../../Lab01-Stream your video using OCI.md"
         },
         {
           "title": "Need Help?",
