@@ -1,4 +1,4 @@
-# Transcode and Stream your video using OCI Digital Media Services
+# Transcode and Stream your video
 
 ## Introduction
 
@@ -6,8 +6,8 @@ This lab gives step by step guidance to transcode your video to formats which en
 
 Estimated Time: 90 minutes
 
-### About Product
-OCI Digital Media Services is region-based PaaS service for processing (transcoding) videos and stream the content with/without CDN along with options of generating thumbnails, speech to text as well.  The workshop intends to introduce the features of OCI Digital Media Services with a simple use case to stream the video of your choice through OCI.
+#### About OCI Digital Media Services
+OCI Digital Media Services is region-based PaaS service for processing (transcoding) videos and stream the content with/without CDN (Content Delivery Network) along with options of generating thumbnails, speech to text as well.  It also integrates with OCI Speech to Text service to get the audio transcription. The workshop intends to introduce the features of OCI Digital Media Services with a simple use case to stream the video of your choice through OCI.
 
 #### Concepts
 
@@ -18,14 +18,14 @@ Media Flows is a regionally deployed, fully managed service for processing video
 Media Flows works with the OCI Object Storage Service so you can provide source content in OCI Object Storage bucket and Media Flows performs specified transcoding operations to create Adaptive Bit Rate (ABR) package in OCI Object Storage bucket. The output from Media Flows can be delivered as streaming Video on Demand with OCI Media Streams Service or third-party systems that you may choose. Media Flows can also help with generating thumbnails for the video asset. 
 
 * Media Workflow Task – Smallest defined work for processing to be done at a specific point in the workflow. 
+<br>
 A simple Media Workflow service consists of one of each below tasks: 
-  * Get the Input media (media asset that is already uploaded in OCI Object Storage).
-  * Transcode – This task creates multiple renditions for the media asset provided.
-  * Thumbnail – Generates thumbnails for the media asset.
-  * Output – Stores the output asset to OCI Object Storage. 
-  * Streaming – Optionally the streaming channels can be preset after the media asset master playlist is created.
-  * Transcription – Optionally you can generate the transcript of the media asset.
-* 
+    * Get the Input media (media asset that is already uploaded in OCI Object Storage).
+    * Transcode – This task creates multiple renditions for the media asset provided.
+    * Thumbnail – Generates thumbnails for the media asset.
+    * Output – Stores the output asset to OCI Object Storage. 
+    * Streaming – Optionally the streaming channels can be preset after the media asset master playlist is created.
+    * Transcription – Optionally you can generate the transcript of the media asset.
 * Media Workflow - customer-defined workflow to process media content that consist of one or more Media Workflow Tasks which defines the processing to be performed.
 * Media Workflow Job - Jobs are used to "run" content through a workflow. Typically, a customer will define a handful of Media Workflows and use them to create many jobs. 
 * Media Workflow Configuration – Re-usable configurations/parameters that can be used to create Media Workflow via API / CLI .
@@ -44,13 +44,16 @@ Media Streams works by ingestion of HLS (m3u8 files) representing transcoded con
   * Akamai CDN – Integrate with your Akamai account and stream through Akamai.
 
 
-### Objectives
+The complete integration will look like below from user perspective. The User or business flow automation (OCI Functions) will initate the Workflow whichabove.
+![BigPicture](images/003.png)
+
+#### Objectives
 
 In this lab, you will:
 * Transcode your video to HLS (HTTP live streaming) format 
 * Stream the transcoded video usign OCI
 
-### Prerequisites
+#### Prerequisites
 
 This lab assumes you have:
 

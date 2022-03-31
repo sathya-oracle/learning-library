@@ -1,13 +1,13 @@
 {
-    "workshoptitle": "Transcode and Stream your video using OCI Digital Media Services",
+    "workshoptitle": "OCI Digital Media Services",
     "include": {},
       "help": "livelabs-help-db_us@oracle.com",
       "tutorials": [
         {
-            "title": "Transcode and Stream your video using OCI Digital Media Services",
+            "title": "Transcode and Stream your video",
             "description": "Digital Media Services",
             "type": "livelabs",
-            "filename": "../../Lab01-Stream your video using OCI.md"
+            "filename": "../../intro-to-dms/Lab01-Stream-your-video-using-OCI.md"
         },
         {
           "title": "Need Help?",
