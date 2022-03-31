@@ -70,7 +70,7 @@ The syntax for a policy will be :
 ```
 Allow "subject" to "verb" "resource-type/entity" in "location" where "conditions"
 ```
-The supported verbs include inspect, read, use & manage in the order of hierarchy access.
+The supported verbs include *inspect, read, use* & *manage* in the order of hierarchy access.
 For OCI Media Services below resource-type/Entity are supported.
 * media-family
     * media-workflow
