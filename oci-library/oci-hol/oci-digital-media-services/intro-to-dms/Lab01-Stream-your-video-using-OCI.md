@@ -1,4 +1,4 @@
-# Transcode and Stream your video
+# Transcode and Stream video
 
 ## Introduction
 
