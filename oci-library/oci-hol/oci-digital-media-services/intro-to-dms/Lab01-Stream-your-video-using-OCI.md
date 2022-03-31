@@ -83,7 +83,7 @@ For OCI Media Services below resource-type/Entity are supported.
 
 Two types of policies are needed to work on the labs for digital media services.
 
-* Granting Group access to Digital Media Services
+* Granting access for Digital Media Services to OCI Services
 Create a create group to streamline the level of access based on the type of individual job role definition.
 For simplicity, we create the below with an any-user clause.
 create a new policy with the below statement
