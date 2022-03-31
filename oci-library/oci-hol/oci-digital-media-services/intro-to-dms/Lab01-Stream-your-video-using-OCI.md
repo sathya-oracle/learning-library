@@ -45,7 +45,7 @@ Media Streams works by ingestion of HLS (m3u8 files) representing transcoded con
 
 
 The complete integration will look like below from user perspective. The User or business flow automation (OCI Functions) will initate the Workflow whichabove.
-![BigPicture](images/003.png)
+![BigPicture](images/001.png)
 
 #### Objectives
 
