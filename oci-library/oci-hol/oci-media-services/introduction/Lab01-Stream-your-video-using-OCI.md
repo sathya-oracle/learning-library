@@ -8,8 +8,8 @@ This lab gives step-by-step guidance to transcode the video to various formats, 
 
 Estimated Time: 90 minutes
 
-#### About OCI Digital Media Services
-OCI Digital Media Services is a region-based PaaS(Platform as a Service) service for processing (transcoding) videos and streaming the content with/without CDN (Content Delivery Network), along with options of generating thumbnails and speech to text. It also integrates with OCI Speech to Text service to get the audio transcription. The workshop intends to introduce the features of OCI Digital Media Services with a simple use case to stream the video through OCI.
+#### About OCI Media Services
+OCI Media Services is a region-based PaaS(Platform as a Service) service for processing (transcoding) videos and streaming the content with/without CDN (Content Delivery Network), along with options of generating thumbnails and speech to text. It also integrates with OCI Speech to Text service to get the audio transcription. The workshop intends to introduce the features of OCI Media Services with a simple use case to stream the video through OCI.
 #### Concepts
 
 **Media Flows**
@@ -63,7 +63,7 @@ In this lab, we will:
   
 ## IAM Policy
 
-The OCI Digital Media Service requires some of the other OCI services to operate.
+The OCI Media Service requires some of the other OCI services to operate.
 In OCI, Identity Policies define access and access to services. 
 The syntax for a policy will be :
 
@@ -81,9 +81,9 @@ For OCI Media Services below resource-type/Entity are supported.
     * media-stream-packaging-config
     * media-stream-cdn-config
 
-Two types of policies are needed to work on the labs for digital media services.
+Two types of policies are needed to work on the labs for media services.
 
-* Granting access for Digital Media Services to OCI Services
+* Granting access for Media Services to OCI Services
 Create a create group to streamline the level of access based on the type of individual job role definition.
 For simplicity, we create the below with an any-user clause.
 create a new policy with the below statement
@@ -101,7 +101,9 @@ Working with the security or identity team is strongly advised for production OC
 
 
 
-* Allow Digital Media Services to use other OCI services 
+* Allow Media Services to integrate and work with other OCI services. 
+Object Storage is mandatory as the files are managed from object storage.
+
 Below policies are required for the Media Flow tasks to perform its duties. 
     ```
       Allow service mediaservices to use object-family in compartment <<videoCompartment>>
@@ -131,10 +133,10 @@ An error will be faced if no buckets are available in the compartment during  Me
  
  <br>
 
-2. Select "Media Services" and then "Media Flows" from OCI Main Menu
+1. From OCI Console main menu, Select "Analytics & AI" and then "Media Flows".
    ![mediaflows 00](images/04.png)
    Above is the landing page for Media Flows.
-3. Create the Media Flow. Remember to choose the correct compartment where the IAM policy is defined.
+2. Create the Media Flow. Remember to choose the correct compartment where the IAM policy is defined.
   ![mediaflows 01](images/05.png)
 In this section, we can perform customization to Media Flow. 
 
@@ -170,7 +172,7 @@ The Media Flow Job completion will bring below type of files:
 * Transcription in JSON format if enabled. (folder transcription)
 ![mediastreams 01](images/18.png) 
 
-1. Navigate to Media Streams section 
+1. Navigate to Media Streams from OCI Main Menu 
    ![mediastreams 02](images/19.png) 
 2. Create Distribution Channel
    ![mediastreams 03](images/20.png)
@@ -209,5 +211,5 @@ Also, enabled distribution channel configurations are required to stream the vid
    ![mediastreams 13](images/30.png)
 
 ## Acknowledgements
-* **Author** - Sathya Mohankalyan - Oracle OCI Digital Media Services
-* **Last Updated By/Date** - Sathya Mohankalyan, April 2022
+* **Author** - Sathya Velir - Oracle OCI Media Services
+* **Last Updated By/Date** - Sathya Velir, September 2022
